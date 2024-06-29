@@ -1,6 +1,7 @@
 import ContactInformation from "../Components/ContactInformation";
 import HeroSection from "../Components/HeroSection";
 import MainMenu from "../Components/MainMenu";
+import ReviewSection from "../Components/ReviewSection";
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroSection />
       <MainMenu />
       <ContactInformation />
+      <ReviewSection />
     </>
   );
 };

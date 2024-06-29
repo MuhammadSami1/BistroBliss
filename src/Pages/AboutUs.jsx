@@ -1,8 +1,13 @@
+import ContactInformation from "../Components/ContactInformation";
+import ReviewSection from "../Components/ReviewSection";
+
 const AboutUs = () => {
   return (
-    <div>
-      <div>About Us</div>
-    </div>
+    <>
+      <div></div>
+      <ContactInformation />
+      <ReviewSection />
+    </>
   );
 };
 

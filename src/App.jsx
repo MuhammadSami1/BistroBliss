@@ -5,6 +5,7 @@ import Menu from "./Pages/Menu";
 import AboutUs from "./Pages/AboutUs";
 import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

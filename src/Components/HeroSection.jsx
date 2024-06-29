@@ -3,7 +3,7 @@ const HeroSection = () => {
     <section>
       <div style={{ position: "relative", width: "100%", height: "100%" }}>
         <img
-          src="./Images/mainpic.jpg"
+          src="./Images/mainpic.webp"
           alt="herosection"
           style={{ objectPosition: "cover", width: "100%", height: "100%" }}
         />
@@ -25,16 +25,14 @@ const HeroSection = () => {
             Best food for your taste
           </div>
           <div className="text-white text-sm lg:text-lg sm:max-w-lg pt-4 tracking-wide font-semibold">
-            <p className="">
-              Discover delectable cuisine and unforgettable moments
-            </p>
+            <p>Discover delectable cuisine and unforgettable moments</p>
             <p className="sm:px-24">in our welcoming, culinary haven.</p>
           </div>
-          <div className="flex sm:px-20 pt-10 sm:gap-10 gap-2">
-            <button className="text-white rounded-3xl px-2 py-2 sm:px-6 sm:py-4 text-sm bg-red-500">
+          <div className="flex sm:px-20 pt-4 sm:pt-10 sm:gap-10 gap-2">
+            <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm bg-red-500">
               Book A Table
             </button>
-            <button className="text-white rounded-3xl px-2 py-2 sm:px-6 sm:py-4 text-sm border border-white">
+            <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm border border-white">
               Explore Menu
             </button>
           </div>

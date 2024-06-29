@@ -4,7 +4,7 @@ const ContactInformation = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 py-10 sm:py-14 md:py-24 px-10 sm:px-20 md:px-28 gap-16">
         <div className="max-w-lg self-start relative">
           <img
-            src="/Images/Contactfood.jpg"
+            src="/Images/Contactfood.webp"
             alt="food"
             className="rounded-lg"
             style={{
