@@ -5,7 +5,7 @@ const HeroSection = () => {
         <img
           src="./Images/mainpic.webp"
           alt="herosection"
-          style={{ objectPosition: "cover", width: "100%", height: "100%" }}
+          style={{ objectFit: "cover", width: "100%", height: "100%" }}
         />
         <div
           className="absolute px-2 md:px-16 py-24"
@@ -29,7 +29,7 @@ const HeroSection = () => {
             <p className="sm:px-24">in our welcoming, culinary haven.</p>
           </div>
           <div className="flex sm:px-20 pt-4 sm:pt-10 sm:gap-10 gap-2">
-            <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm bg-red-500">
+            <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm bg-red-800">
               Book A Table
             </button>
             <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm border border-white">

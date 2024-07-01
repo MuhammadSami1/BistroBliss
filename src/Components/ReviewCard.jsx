@@ -12,7 +12,7 @@ const ReviewCard = ({ title, profile, name, address, message }) => {
             src={profile}
             alt="profile"
             className="rounded-full"
-            style={{ objectPosition: "cover", width: "60px", height: "60px" }}
+            style={{ objectFit: "cover", width: "60px", height: "60px" }}
           />
           <div className="text-sm">
             <div className="py-1">{name}</div>

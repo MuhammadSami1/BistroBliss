@@ -4,7 +4,6 @@ import ReviewSection from "../Components/ReviewSection";
 const AboutUs = () => {
   return (
     <>
-      <div></div>
       <ContactInformation />
       <ReviewSection />
     </>
