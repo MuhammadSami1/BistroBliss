@@ -1,10 +1,12 @@
-const ContactInformation = () => {
+import { Link } from "react-router-dom";
+
+const ContactInformation = ({ image }) => {
   return (
     <section className="bg-zinc-200">
       <div className="grid grid-cols-1 md:grid-cols-2 py-10 sm:py-14 md:py-24 px-10 sm:px-20 md:px-28 gap-16">
         <div className="max-w-lg self-start relative">
           <img
-            src="/Images/Contactfood.webp"
+            src={image}
             alt="food"
             className="rounded-lg"
             style={{
@@ -49,7 +51,7 @@ const ContactInformation = () => {
           </div>
           <div className="py-10 text-left">
             <button className="text-sm sm:px-4 px-2 py-2 sm:py-4 border border-black rounded-3xl">
-              More About Us
+              <Link to="/about">More About Us</Link>
             </button>
           </div>
         </div>

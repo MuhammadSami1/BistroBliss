@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hidden md:flex px-4 py-2 font-normal text-base rounded-3xl border border-black">
-          Book a Table
+          <Link to="/contact">Book a Table</Link>
         </div>
         <button
           type="button"

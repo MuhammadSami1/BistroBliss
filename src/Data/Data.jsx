@@ -1,0 +1,68 @@
+const Food = [
+  {
+    id: "1",
+    name: "Pancakes",
+    price: 7.99,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Fluffy pancakes served with syrup and butter.",
+    category: "breakfast",
+  },
+  {
+    id: "2",
+    name: "Eggs Benedict",
+    price: 10.49,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Classic eggs benedict with hollandaise sauce.",
+    category: "breakfast",
+  },
+  {
+    id: "3",
+    name: "French Toast",
+    price: 8.79,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Golden brown french toast topped with powdered sugar.",
+    category: "breakfast",
+  },
+  {
+    id: "4",
+    name: "Omelette",
+    price: 9.99,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Customizable omelette with your choice of fillings.",
+    category: "breakfast",
+  },
+  {
+    id: "5",
+    name: "Breakfast Burrito",
+    price: 7.49,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Hearty breakfast burrito with eggs, sausage, and cheese.",
+    category: "breakfast",
+  },
+  {
+    id: "6",
+    name: "Bagel with Cream Cheese",
+    price: 4.99,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Toasted bagel served with creamy cream cheese.",
+    category: "breakfast",
+  },
+  {
+    id: "7",
+    name: "Fruit Parfait",
+    price: 6.49,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Refreshing fruit parfait with yogurt and granola.",
+    category: "breakfast",
+  },
+  {
+    id: "8",
+    name: "Waffles",
+    price: 8.99,
+    img: "./Images/Breakfast/FrenchToast1.jpg",
+    description: "Crispy waffles topped with fresh berries and whipped cream.",
+    category: "breakfast",
+  },
+];
+
+export default Food;

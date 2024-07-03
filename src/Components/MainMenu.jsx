@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MenuCard from "./MenuCard";
 
 const BreakfastSvg = (
@@ -132,12 +133,14 @@ const MainMenu = () => {
       <div className="text-center text-4xl py-16 libre-baskerville-regular">
         Browse Our Menu
       </div>
-      <div className="pb-28 flex flex-wrap gap-y-9 justify-center items-center max-w-6xl mx-auto">
-        <MenuCard title="Breakfast" svg={BreakfastSvg} />
-        <MenuCard title="Main Dishes" svg={MainDishesSvg} />
-        <MenuCard title="Drinks" svg={Drinks} />
-        <MenuCard title="Desserts" svg={Desserts} />
-      </div>
+      <Link to="/menu">
+        <div className="pb-28 flex flex-wrap gap-y-9 justify-center items-center max-w-6xl mx-auto">
+          <MenuCard title="Breakfast" svg={BreakfastSvg} />
+          <MenuCard title="Main Dishes" svg={MainDishesSvg} />
+          <MenuCard title="Drinks" svg={Drinks} />
+          <MenuCard title="Desserts" svg={Desserts} />
+        </div>
+      </Link>
     </section>
   );
 };

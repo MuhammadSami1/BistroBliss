@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
   return (
     <section>
@@ -30,10 +32,10 @@ const HeroSection = () => {
           </div>
           <div className="flex sm:px-20 pt-4 sm:pt-10 sm:gap-10 gap-2">
             <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm bg-red-800">
-              Book A Table
+              <Link to="/contact">Book A Table</Link>
             </button>
             <button className="text-white rounded-3xl px-1 py-1 sm:px-6 sm:py-4 text-sm border border-white">
-              Explore Menu
+              <Link to="/menu">Explore Menu</Link>
             </button>
           </div>
         </div>
