@@ -16,5 +16,5 @@
   padding-left: 20px;
 }
 .MenuButton {
-  @apply border md:px-9 sm:px-5 px-4 py-2 md:py-3 rounded-2xl md:rounded-3xl;
+  @apply border md:px-9 sm:px-5 px-2 py-1 md:py-3 rounded-2xl md:rounded-3xl;
 }

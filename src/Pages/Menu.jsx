@@ -84,7 +84,7 @@ const Menu = () => {
           <div className="text-4xl md:text-7xl text-black text-opacity-80 libre-baskerville-regular">
             Our Menu
           </div>
-          <p className="max-w-lg mx-auto pt-5 text-gray-600">
+          <p className="max-w-lg px-5 sm:px-0 sm:text-sm text-md mx-auto pt-5 text-gray-600">
             We consider all the drivers of change gives you the components you
             need need to change to create a truly happens.
           </p>
@@ -92,7 +92,7 @@ const Menu = () => {
 
         {/* Button */}
         <div className="pb-16">
-          <div className="flex justify-center items-center space-x-2 sm:space-x-5 text-sm font-medium">
+          <div className="flex justify-center items-center space-x-2 sm:space-x-5 text-xs sm:text-sm font-medium">
             <button className={mainColor.all} onClick={showAllItems}>
               All
             </button>

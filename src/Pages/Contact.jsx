@@ -8,7 +8,7 @@ const Contact = () => {
           <div className="text-4xl md:text-7xl text-black text-opacity-80 libre-baskerville-regular">
             Contact Us
           </div>
-          <p className="max-w-lg mx-auto pt-5 text-gray-600">
+          <p className="max-w-lg px-5 sm:px-0 sm:text-sm text-md mx-auto pt-5 text-gray-600">
             We consider all the drivers of change gives you the components you
             need need to change to create a truly happens.
           </p>
@@ -81,19 +81,19 @@ const Contact = () => {
 
         {/* details */}
         <div className="max-w-2xl mx-auto pb-20">
-          <div className="flex flex-row items-center font-medium text-sm md:text-md justify-evenly px-5 md:px-0 gap-36 sm:gap-44 md:gap-56">
+          <div className="flex flex-row items-center font-medium text-xs sm:text-sm md:text-md justify-evenly px-5 md:px-0 space-x-2 sm:space-x-0 gap-16 sm:gap-44 md:gap-56">
             <div className="mb-2 md:mb-0">Call Us:</div>
             <div className="mb-2 md:mb-0">Hours:</div>
             <div className="mb-2 md:mb-0">Our Location:</div>
           </div>
-          <div className="flex  items-center justify-evenly px-5 md:px-0 gap-16 sm:gap-24 md:gap-24 md:space-x-1 pt-5">
-            <div className="text-red-800 bg-opacity-90 font-semibold text-sm sm:text-md md:text-xl mb-2 md:mb-0">
+          <div className="flex  items-center justify-evenly  sm:px-5 md:px-0 gap-5 sm:gap-24 md:gap-24 md:space-x-1 pt-0 sm:pt-5">
+            <div className="text-red-800 bg-opacity-90 font-medium sm:font-semibold text-[10px] sm:text-sm sm:text-md md:text-xl mb-2 md:mb-0">
               +92-307-4031207
             </div>
-            <div className="text-sm mb-2 md:mb-0">
+            <div className="text-[10px] sm:text-sm mb-2 md:mb-0">
               Mon-Fri: 9:00 AM - 10:00 PM
             </div>
-            <div className="text-sm max-w-32 leading-5 pl-0 md:pl-5">
+            <div className="text-[10px] sm:text-sm max-w-16 sm:max-w-32 leading-5 pl-0 md:pl-5">
               123 Main Street, Los Angeles, CA, United States
             </div>
           </div>
