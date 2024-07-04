@@ -4,53 +4,79 @@ import { useEffect } from "react";
 
 const Menu = () => {
   const [item, setAllItem] = useState([]);
-  const [color, setColor] = useState("MenuButton");
+  const [mainColor, setMainColor] = useState({
+    all: "MenuButton",
+    breakfast: "MenuButton",
+    maindishes: "MenuButton",
+    drinks: "MenuButton",
+    desserts: "MenuButton",
+  });
 
+  const changeColor = (button) => {
+    setMainColor({
+      all: "MenuButton",
+      breakfast: "MenuButton",
+      maindishes: "MenuButton",
+      drinks: "MenuButton",
+      desserts: "MenuButton",
+      [button]: "MenuButton bg-red-800 text-white bg-opacity-80",
+    });
+  };
   useEffect(() => {
-    setAllItem(
-      Food.map((item) => (
-        <div key={item.id}>
-          <img
-            src={item.img}
-            alt={item.img}
-            className="rounded-t-lg"
-            style={{ objectFit: "cover", height: "180px" }}
-          />
-          <div className="text-center border-2 border-t-0 rounded-b-lg">
-            <div className="py-3 text-red-800 bg-opacity-90 text-lg font-semibold">{`$ ${item.price}`}</div>
-            <div className="pb-3 font-medium">{item.name}</div>
-            <div className="w-48 mx-auto text-xs leading-5 pb-7 text-gray-700">
-              {item.description}
-            </div>
-          </div>
-        </div>
-      ))
-    );
-    setColor("MenuButton bg-red-800 text-white bg-opacity-80");
+    showAllItems();
+    changeColor("all");
   }, []);
 
   function showAllItems() {
     setAllItem(
-      Food.map((item) => (
-        <div key={item.id}>
-          <img
-            src={item.img}
-            alt={item.img}
-            className="rounded-t-lg"
-            style={{ objectFit: "cover", height: "180px" }}
-          />
-          <div className="text-center border-2 border-t-0 rounded-b-lg">
-            <div className="py-3 text-red-800 bg-opacity-90 text-lg font-semibold">{`$ ${item.price}`}</div>
-            <div className="pb-3 font-medium">{item.name}</div>
-            <div className="w-48 mx-auto text-xs leading-5 pb-7 text-gray-700">
-              {item.description}
+      Food.sort(() => Math.random() - 0.5)
+        .slice(0, 16)
+        .map((item) => (
+          <div key={item.id}>
+            <img
+              src={item.img}
+              alt={item.img}
+              className="rounded-t-lg"
+              style={{ objectFit: "cover", height: "180px" }}
+            />
+            <div className="text-center border-2 border-t-0 rounded-b-lg">
+              <div className="py-3 text-red-800 bg-opacity-90 text-lg font-semibold">{`$ ${item.price}`}</div>
+              <div className="pb-3 font-medium">{item.name}</div>
+              <div className="w-48 mx-auto text-xs leading-5 pb-7 text-gray-700">
+                {item.description}
+              </div>
             </div>
           </div>
-        </div>
-      ))
+        ))
     );
-    setColor("MenuButton bg-red-800 text-white bg-opacity-80");
+    changeColor("all");
   }
+
+  const showCategoryItems = (category) => {
+    setAllItem(
+      Food.filter((item) => item.category === category)
+        .slice(0, 16)
+        .map((item) => (
+          <div key={item.id}>
+            <img
+              src={item.img}
+              alt={item.img}
+              className="rounded-t-lg"
+              style={{ objectFit: "cover", height: "180px" }}
+            />
+            <div className="text-center border-2 border-t-0 rounded-b-lg">
+              <div className="py-3 text-red-800 bg-opacity-90 text-lg font-semibold">{`$ ${item.price}`}</div>
+              <div className="pb-3 font-medium">{item.name}</div>
+              <div className="w-48 mx-auto text-xs leading-5 pb-7 text-gray-700">
+                {item.description}
+              </div>
+            </div>
+          </div>
+        ))
+    );
+    changeColor(category);
+  };
+
   return (
     <section className="bg-zinc-50">
       <div className="flex flex-col">
@@ -67,13 +93,33 @@ const Menu = () => {
         {/* Button */}
         <div className="pb-16">
           <div className="flex justify-center items-center space-x-2 sm:space-x-5 text-sm font-medium">
-            <button className={color} onClick={showAllItems}>
+            <button className={mainColor.all} onClick={showAllItems}>
               All
             </button>
-            <button className="MenuButton">Breakfast</button>
-            <button className="MenuButton">Main Dishes</button>
-            <button className="MenuButton">Drinks</button>
-            <button className="MenuButton">Desserts</button>
+            <button
+              className={mainColor.breakfast}
+              onClick={() => showCategoryItems("breakfast")}
+            >
+              Breakfast
+            </button>
+            <button
+              className={mainColor.maindishes}
+              onClick={() => showCategoryItems("maindishes")}
+            >
+              Main Dishes
+            </button>
+            <button
+              className={mainColor.drinks}
+              onClick={() => showCategoryItems("drinks")}
+            >
+              Drinks
+            </button>
+            <button
+              className={mainColor.desserts}
+              onClick={() => showCategoryItems("desserts")}
+            >
+              Desserts
+            </button>
           </div>
         </div>
 

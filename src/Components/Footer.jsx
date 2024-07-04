@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-16">
       <div className="max-w-5xl mx-auto px-5">
-        <div className="grid  sm:grid-cols-4 gap-y-10 gap-2 md:gap-10">
+        <div className="flex justify-between flex-col sm:flex-row gap-y-10 gap-2 md:gap-10">
           {/* Navigation Links */}
           <div>
             <h5 className="text-white text-lg font-bold mb-4">Pages</h5>
