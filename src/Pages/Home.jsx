@@ -2,7 +2,7 @@ import ContactInformation from "../Components/ContactInformation";
 import HeroSection from "../Components/HeroSection";
 import MainMenu from "../Components/MainMenu";
 import ReviewSection from "../Components/ReviewSection";
-import image1 from "../../public/Images/Contactfood.webp";
+import image1 from "/Images/Contactfood.webp";
 
 const Home = () => {
   return (
